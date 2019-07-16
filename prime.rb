@@ -6,7 +6,7 @@ def prime?(num)
   elsif num == 2
     return true
   else
-    (2...num).each do |i|
+    (2...sqrt(num)).each do |i|
       if num % i == 0
         return false
       else
